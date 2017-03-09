@@ -11,7 +11,7 @@ public class HuffmanAPI  {
 
 	private Serializer serializer;
 
-    public Map<Character, Integer> code = new TreeMap<>();
+    public Map<String, StringBuffer> code = new TreeMap<>();
     
 
     public  HuffmanAPI(Serializer serializer)throws Exception {
@@ -36,7 +36,7 @@ public class HuffmanAPI  {
 	{
 		serializer.read();
 		
-		code = (Map<Character, Integer>) serializer.pop();
+		code = (Map<String, StringBuffer>) serializer.pop();
 		
 
 	}
@@ -51,7 +51,7 @@ public class HuffmanAPI  {
 	{
 
 		serializer.push(code);
-		//serializer.push(maxHeap);
+		
 		serializer.write(); 
 
 
@@ -75,7 +75,7 @@ public class HuffmanAPI  {
 			//userDetails=userDetails.trim();
 
 			// parse user details string
-			String[] userTokens = userDetails.split(delims);
+			//String[] userTokens = userDetails.split(delims);
 
 			Item items = new Item(userDetails);
 			//char[] text = items.item.toCharArray();
