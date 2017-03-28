@@ -1,3 +1,8 @@
+package controllors;
+/**
+ * @author Judy
+ * 
+ */
 
 import java.util.HashMap;
 import java.util.Map;
@@ -51,7 +56,7 @@ public class Huffman {
 	// input is an array of frequencies, indexed by character code
 	public HuffmanTree buildTree(char[] key ,int[] value) {
 		PriorityQueue<HuffmanTree> trees = new PriorityQueue<HuffmanTree>();
-		// initially, we have a forest of leaves
+		// initially,  a forest of leaves
 		// one for each non-empty character
 
 		for (int i = 0; i < key.length; i++)

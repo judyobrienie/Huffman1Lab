@@ -1,3 +1,10 @@
+package controllors;
+
+/**
+ * @author Judy
+ * reference code
+//http://stackoverflow.com/questions/17995021/character-counter-in-java
+*/
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;

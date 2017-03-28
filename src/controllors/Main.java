@@ -1,5 +1,11 @@
+package controllors;
 
-
+/**
+ * This is the main class that uses console i/o to interact with the user.  
+ * ****************                          ****************************
+ * @author Judy O'Brien
+ * @version 1
+ */
 
 import java.io.File;
 
@@ -8,8 +14,6 @@ import java.util.Scanner;
 
 import utils.Serializer;
 import utils.XMLSerializer;
-
-
 
 /**
  * Creates a new scanner for i/o
@@ -66,7 +70,7 @@ public class Main {
 						hm.printMap(c);
 
 						h.code.put(Item.item, hm.test);
-						System.out.println("\n\nHuffman Encoding of  :   go go gofhers\n" + hm.test.toString());     
+						System.out.println("\n\nHuffman Encoding of  :   go go gophers\n" + hm.test.toString());     
 
 
 						break;

@@ -1,5 +1,9 @@
+package controllors;
+/**
+ * @author Judy
+ */
 
-import java.io.File;
+import java.io.File; 
 import java.io.FileNotFoundException;
 import java.util.Map;
 import java.util.Scanner;
@@ -66,6 +70,10 @@ public class HuffmanAPI  {
 
 	public void loadDefaultFiles() throws FileNotFoundException{
 
+
+
+		
+		
 		File usersFile = new File("../Huffman/src/lib/hello.txt");
 		Scanner inUsers = new Scanner(usersFile);
 		String delims = " ";//each field in the file is separated(delimited) by a space.
